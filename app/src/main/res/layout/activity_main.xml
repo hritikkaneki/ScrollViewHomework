@@ -9,9 +9,11 @@
         android:id="@+id/article_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/top_padding"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
         android:background="@color/purple_700"
         android:padding="@dimen/padding_regular"
+        android:paddingTop="@dimen/top_padding"
         android:text="@string/article_title"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="@color/black"
@@ -20,7 +22,9 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/article_heading"
+        android:layout_marginTop="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
